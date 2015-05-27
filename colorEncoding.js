@@ -14,7 +14,7 @@ var VSHADER_SOURCE = [
         'v_Normal    = normalize(vec3(u_NormalMatrix * a_Normal));',
         'v_Color     = a_Color;',
     '}',
-].gl();
+].join('');
 
 var FSHADER_SOURCE = [
     'precision mediump float;',
@@ -37,11 +37,15 @@ var FSHADER_SOURCE = [
             'gl_FragColor = vec4(diffuse + ambient, v_Color.a);',
         '}',
     '}',
-].gl();
+].join('');
 
 function main() {
+
+    // Set to true, if you want to see an alert when geometry has been clicked
     var alertMessage = true;
-    var visualHit    = true;
+    // Set to true, if you want to use the color inversion for picking
+    var visualHit    = false;
+
     var canvas    = document.getElementById('webgl');
     canvas.height = window.innerHeight;
     canvas.width  = window.innerWidth;

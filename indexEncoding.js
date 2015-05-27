@@ -24,7 +24,7 @@ var VSHADER_SOURCE = [
             'v_Color = vec4(color, a_Color.a);',
         '}',
     '}',
-].gl();
+].join('');
 
 var FSHADER_SOURCE = [
     'precision mediump float;',
@@ -42,7 +42,7 @@ var FSHADER_SOURCE = [
         'vec3 ambient        = u_Ambient * v_Color.rgb;',
         'gl_FragColor        = vec4(diffuse + ambient, v_Color.a);',
     '}',
-].gl();
+].join('');
 
 function main() {
     var canvas    = document.getElementById('webgl');
