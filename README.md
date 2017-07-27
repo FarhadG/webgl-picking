@@ -1,9 +1,9 @@
-#WebGL Picking
+# WebGL Picking
 > Various implementations of WebGL picking (hit testing)
 
 ---
 
-###Demo
+## Demo
 
 You will find two various methods for WebGL picking (hit testing) by encoding index or color values. Here's a simple <a href="http://farhadg.github.io/webgl-picking/" target="_blank">DEMO</a> showcasing the encoding of the geometry index into the alpha channel.
 
@@ -11,7 +11,7 @@ Go ahead and give it a try: <a href="http://farhadg.github.io/webgl-picking/" ta
 
 ---
 
-###Installation
+## Installation
 
 ```bash
 git clone https://github.com/FarhadG/webgl-picking.git
@@ -21,7 +21,7 @@ cd webgl-picking
 
 ---
 
-###LICENSE
+## LICENSE
 
 MIT
 
